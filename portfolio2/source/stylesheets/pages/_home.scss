@@ -1,5 +1,5 @@
-html {
-  height: 100%;
+body {
+  height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 }
@@ -127,7 +127,7 @@ a {
 }
 
 .card-carousel .my-card {
-  height: 20rem;
+  height: 32rem;
   width: 30%;
   position: relative;
   z-index: 1;
