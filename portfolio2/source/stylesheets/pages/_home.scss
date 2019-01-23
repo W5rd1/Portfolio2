@@ -111,9 +111,6 @@ a {
 .social-media a {
   color: rgba(66,75,84,0.8);
 }
-.header {
-  color: rgb(255,0,34);
-}
 .container {
   height: 100vh;
   width: 100vw;
@@ -129,15 +126,13 @@ a {
   }
   .middle {
     height: 35vh;
-    display:flex;
-    .logo {
-      width: 50%;
-      img {
-        height: 100%;
-      }
-    }
-    .description {
-      width: 50%;
+    width: 50%;
+    p {
+        background: -webkit-linear-gradient(#53A2BE, #1D84B5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
   }
   .bottom {
