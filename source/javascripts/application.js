@@ -1,7 +1,6 @@
 //= require jquery
 //= require bootstrap
 //= require_tree .
-// This is where it all goes :)
 function ScrollHandler(pageId) {
   var page = document.querySelector(pageId);
   var pageStart = page.offsetTop;
