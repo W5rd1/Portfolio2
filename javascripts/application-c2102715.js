@@ -11,7 +11,7 @@
  *
  * Date: 2014-12-17T15:27Z
  */
-function ScrollHandler(e){function t(){function e(e){e==c&&(cancelAnimationFrame(t),setTimeout(function(){r=!1},500))}r=!0;var t,i,l,u=n,c=o,d=c-u,f=0,p=function(e){return e<.5?4*e*e*e:(e-1)*(2*e-2)*(2*e-2)+1},h=function(){f+=16,i=f/s,i>1?(i=1,l=c):l=u+d*p(i),a.scrollTop=l,t=requestAnimationFrame(h),e(l),console.log("position="+a.scrollTop+"("+i+")")};t=requestAnimationFrame(h)}var n,i=document.querySelector(e),o=i.offsetTop,r=!1,s=1e3,a=document.getElementById("scroll");window.addEventListener("wheel",function(e){if(n=a.scrollTop,r)e.preventDefault();else{var s=i.scrollHeight,l=s,u=window.innerHeight,c=n+u,d=c-o,f=o+s-n,p=d>=0,h=d>l,g=f>=0,m=f>l,v=e.deltaY>0;(v&&p&&!h||!v&&g&&!m)&&(e.preventDefault(),t())}})}/*!
+function ScrollHandler(e){function t(){function e(e){e==c&&(cancelAnimationFrame(t),setTimeout(function(){r=!1},500))}r=!0;var t,i,l,u=n,c=o,d=c-u,f=0,p=function(e){return e<.5?4*e*e*e:(e-1)*(2*e-2)*(2*e-2)+1},h=function(){f+=16,i=f/s,i>1?(i=1,l=c):l=u+d*p(i),a.scrollTop=l,t=requestAnimationFrame(h),e(l)};t=requestAnimationFrame(h)}var n,i=document.querySelector(e),o=i.offsetTop,r=!1,s=1e3,a=document.getElementById("scroll");window.addEventListener("wheel",function(e){if(n=a.scrollTop,r)e.preventDefault();else{var s=i.scrollHeight,l=s,u=window.innerHeight,c=n+u,d=c-o,f=o+s-n,p=d>=0,h=d>l,g=f>=0,m=f>l,v=e.deltaY>0;(v&&p&&!h||!v&&g&&!m)&&(e.preventDefault(),t())}})}/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under the MIT license
